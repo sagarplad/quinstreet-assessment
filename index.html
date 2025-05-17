@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Landing Page</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="main-header">
+    <img src="assets/Logo.svg" alt="Logo" class="logo" />
+  </header>
+
+  <div class="form-wrapper">
+    <div class="promo-header">
+      <p>Enter to win a 3rd generation Nest<br>Learning Thermostat worth $249.</p>
+    </div>
+
+    <div class="form-body">
+      <form id="leadForm">
+        <input type="text" name="name" id="name" placeholder="Name" required />
+        <div class="form-row">
+          <input type="text" name="city" id="city" class="half-input" placeholder="City" />
+          <input type="text" name="state" id="state" class="half-input" placeholder="State" />
+        </div>
+        <input type="tel" name="phone" id="phone" placeholder="Phone Number" required />
+        <input type="email" name="email" id="email" placeholder="Email Address" required />
+        <button type="submit" id="submitBtn">ENTER TO WIN</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- EVEN MORE SAVINGS SECTION -->
+<section class="savings-outer">
+  <div class="savings-header">EVEN MORE SAVINGS</div>
+  <div class="savings-inner">
+    <p class="savings-tag">ADVERTORIAL</p>
+    <h3 class="savings-title">Tricks Homeowners Use to Eliminate Bills</h3>
+    <p class="savings-text">
+      Surging energy bills, unpredictable weather patterns and dissatisfaction with utility
+      companies have homeowners scrambling... <a href="https://www.google.com/" class="read-more-link">READ MORE</a>
+    </p>
+  </div>
+</section>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+  <script src="./js/script.js"></script>
+</body>
+</html>

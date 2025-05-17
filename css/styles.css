@@ -1,0 +1,211 @@
+html, body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    animation: backgroundCycle 10s infinite;
+    background: #ECF8FB;
+  }
+  @keyframes backgroundCycle {
+    0% { background-color: #ECF8FB; }
+    50% { background-color: #EFEFEF; }
+    100% { background-color: #ECF8FB; }
+  }
+  .main-header {
+    height: 80px;
+    background-color: #545253;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .logo {
+    height: 50px;
+  }
+  
+  .form-wrapper {
+    width: 670px;
+    height: 464px;
+    margin: 40px auto 20px auto;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    border-radius: 6px;
+    overflow: hidden;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .promo-header {
+    height: 80px;
+    background-color: #3f3f3f;
+    color: #fff;
+    text-align: center;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.5;
+    padding: 0 20px;
+  }
+  
+  .form-body {
+    flex: 1;
+    padding: 20px 30px;
+    box-sizing: border-box;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    height: 100%;
+    justify-content: center;
+  }
+  
+  input {
+    padding: 12px;
+    font-size: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+  }
+  
+  .city-state-group {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .city-state-group input {
+    flex: 1;
+  }
+  .form-row {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .half-input {
+    width: 100%;
+  }
+  button {
+    margin-top: 10px;
+    padding: 14px;
+    background: #F7941D;
+    color: white;
+    font-size: 14px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: background 0.3s;
+  }
+  
+  button:hover {
+    background: #e98514;
+  }
+  
+  /* ============ Even More Savings Section ============ */
+  
+  .savings-outer {
+    width: 404px;
+    height: 242px;
+    border: 2px solid #A3C661;
+    margin: 40px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: transparent;
+    box-sizing: border-box;
+    position: relative;
+  }
+  
+  .savings-header {
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 1px 30px;
+    font-size: 13px;
+    font-weight: 500;
+    color: #545253;
+    animation: backgroundCycle 10s infinite;
+    background: #ECF8FB;
+    display: inline-block;
+    z-index: 2;
+    line-height: 1.5;
+    width: 152px;
+  }
+  
+  
+  .savings-inner {
+    width: 363px;
+    height: 203px;
+    background: white;
+    margin-top: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .savings-tag {
+    font-size: 12px;
+    color: #A3C661;
+    font-weight: 600;
+    margin-bottom: 6px;
+  }
+  
+  .savings-title {
+    font-size: 17px;
+    color: #333;
+    margin: 0 0 10px 0;
+  }
+  
+  .savings-text {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.5;
+  }
+  
+  .read-more-link {
+    color: #2a9fd6;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  .read-more-link:hover {
+    text-decoration: underline;
+  }
+  
+  
+  /* Responsive */
+  @media (max-width: 767px) {
+    .form-wrapper,
+    .savings-section {
+      width: 90%;
+    }
+    .savings-outer {
+      height: 260px;
+    }
+    .savings-inner {
+      width: 330px;
+      height: 220px;
+    }
+  
+    .city-state-group {
+      flex-direction: column;
+    }
+    .container {
+      padding: 10px;
+    }
+  
+    .form-row {
+      flex-direction: row;
+    }
+  
+    .half-input {
+      width: calc(50% - 5px);
+    }
+    
+  }
+  
